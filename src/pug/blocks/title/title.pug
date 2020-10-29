@@ -1,0 +1,6 @@
+mixin title(text,cl,caption)
+    if caption
+        .title(class= cl)= text
+        .title__caption= caption
+    else
+        .title(class= cl)= text

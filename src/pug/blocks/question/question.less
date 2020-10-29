@@ -1,0 +1,30 @@
+.question {
+    display: flex;
+    align-items: center;
+
+    &__image {
+        height: 50px;
+        width: 50px;
+        
+        flex: 0 0 50px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 45px;
+    }
+
+    &__content {
+        font-size: 17px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: @black;
+        padding:  0 0 0 10px;
+        @media @320{
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+extends ../layout/main
+
+
+
+
+block variables
+    -var title = 'index'
+    -var description = 'index'
+    -var pageClass = 'index'
+
+block content
+    
+    section.section
+        .section__inner.section__inner_question
+            +question()
+
+    section.section
+        .section__inner.section__inner_white
+            +title('Почему мы проводим этот МАРАФОН?')
+            .section__box.section__box_reason
+                +reason()
+    section.section
+        .section__inner.section__inner_half
+            +title('3 причины пройти марафон')
+            .section__box.section__box_cause
+                +cause()
+    
+    section.section
+        .section__inner.section__inner_half
+            +title('Что мы разберем?','title_caption','Что ждет участников марафона?')
+            .section__box.section__box_double
+                .section__vebinars
+                    +vebinar()
+                    +title('Бонусы','title_vebinar')
+                    .section__bonus
+                        
+                        +bonus()
+                +registry()
+
+    section.section
+        .section__inner.section__inner_half
+            +title('Кто будет вести марафон?','title_caption','вебинары проведет основатель Invest Heroes')
+            +team()
+            
+    section.section
+        .section__inner
+            +title('Мы обучили более 300 человек','title_caption','которые остались довольны результатом')
+            .section__box.section__box_review
+                +review()
+
+                

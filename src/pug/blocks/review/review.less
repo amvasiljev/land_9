@@ -1,0 +1,115 @@
+.review {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+
+  
+    &__text {
+        font-size: 17px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.53;
+        letter-spacing: normal;
+        text-align: center;
+        color: @black_two;
+        max-width: 842px;
+    }
+
+    &__writter {
+        padding: 50px 0 0 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        border-radius: 50px;
+        
+        background-color: @white;
+        height: 57px;
+        width: 57px;
+    }
+
+    &__content {
+        padding: 0 0 0 30px;
+    }
+
+    &__name {
+        font-size: 21px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        text-align: left;
+        color: @charcoal_grey;
+    }
+
+    &__profile {
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        text-align: left;
+        color: @charcoal_grey;
+    }
+
+    &__slider {
+        padding: 70px 66px;
+        border-radius: 50px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 1, 0.15);
+        background-color: @white;
+        .slick-track{
+            display: flex;
+            align-items: center;
+        }
+
+        @media @768 {
+            padding: 40px 50px;
+            border-radius: 30px;
+        }
+
+        @media @320 {
+            padding: 30px 50px;
+            border-radius: 20px;
+           
+        }
+    }
+
+    &__options{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        padding: 0 66px;
+        @media @768{
+            padding: 0 30px;
+        }
+        @media @320{
+            padding: 0 15px;
+        }
+    }
+    &__arrows{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 0;
+    }
+    &__arrow{
+        height: 31px;
+        width: 31px;
+        border: 2px solid @black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &_prev{
+            transform: rotate(180deg);
+        }
+    }
+
+}

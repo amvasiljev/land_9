@@ -1,0 +1,61 @@
+.vebinar{
+    
+    &__count{
+       
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+        color: @lightish_red;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    &__title{
+        font-size: 28px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+       
+        letter-spacing: normal;
+        text-align: left;
+        color: @black;
+        text-transform: uppercase;
+        margin-bottom: 55px;
+        
+    }
+    &__content{
+        li{
+            font-size: 17px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.59;
+            letter-spacing: normal;
+            text-align: left;
+            color: @greyish_brown;
+            padding:  0 0 0 30px;
+            position: relative;
+            &:before{
+                content:'';
+                position: absolute;
+                left: 0;
+                top: 13px;
+                display: block;
+                height: 3px;
+                width: 3px;
+                background-color: @greyish_brown;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__slider{
+        padding: 0 0 70px 0;
+        .slick-dots{
+            bottom: 20px;
+        }
+    }
+}

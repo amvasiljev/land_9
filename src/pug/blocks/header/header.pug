@@ -1,0 +1,13 @@
+mixin header()
+	header.header
+		.header__inner.lazy(data-src="/assets/img/header_bg.png")
+			
+			.header__content
+				.header__heading Мы убеждены - инвестор должен понимать, что и зачем он покупает 
+				.header__title
+					h1 Марафон<br>“Осознанность 2.0”
+				.header__subtitle 9 - 15 ноября
+			.header__options
+				+button('Хочу на марафон','','','','#popup')
+				a(href="/").header__video Смотреть видео / <span>2 мин</span>
+				.header__caption Прошло уже более 5000 человек

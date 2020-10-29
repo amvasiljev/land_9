@@ -1,0 +1,12 @@
+mixin popup()
+    .popup#popup
+        .popup__title Запись на марафон
+        form(action="/").popup__form
+            .popup__group
+                input(type="text" placeholder='Имя').popup__input
+                input(type="text" placeholder='Электронная почта').popup__input
+
+            +button('Записаться','button_transparent popup__submit','submit')
+
+    .popup#thanks
+        .popup__title Благодарим за регистрацию

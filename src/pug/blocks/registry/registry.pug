@@ -1,0 +1,27 @@
+mixin registry()
+    form(action="/").registry
+        .registry__group
+            label.registry__mark(for="registry__name") Имя
+                input(type="text" )#registry__name.registry__input
+            
+            label.registry__mark(for="registry__email") Электронная почта
+                input(type="email" )#registry__email.registry__input
+            
+            
+            label.registry__mark(for="registry__text") Сколько лет вы инвестируете?
+                input(type="text" )#registry__text.registry__input
+            
+
+        .registry__title.lazy(data-src="/assets/img/email.svg") А знаете ли вы?
+        .registry__text
+            p Что кроме аналитического сервиса Invest Heroes мы ведем крутой еженедельный дайджест
+
+            p Более 40,000 людей читают наш блог в Telegram и соцсетях
+
+            p 10 минут в неделю и вы будете держать руку на пульсе рынков и не только
+
+        .registry__consent
+                input.registry__checkbox#registry(type="checkbox" checked)
+                label.registry__label(for="registry") Пришлите мне дайджест почитать
+
+        +button('Зарегистрироваться','button_transparent','submit')
